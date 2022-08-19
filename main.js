@@ -21,12 +21,12 @@ if(localStorage.getItem("bestBrain")){
 const traffic=[
     new Car(road.getLaneCenter(2),-100,30,50,"DUMMY",2,getRandomColor()),
     new Car(road.getLaneCenter(0),-300,30,50,"DUMMY",2,getRandomColor()),
-    new Car(road.getLaneCenter(1),-300,30,50,"DUMMY",1,getRandomColor()),
+    new Car(road.getLaneCenter(1),-500,30,50,"DUMMY",1,getRandomColor()),
     new Car(road.getLaneCenter(1),-500,30,50,"DUMMY",2,getRandomColor()),
     new Car(road.getLaneCenter(0),-500,30,50,"DUMMY",2.7,getRandomColor()),
     new Car(road.getLaneCenter(1),-500,30,50,"DUMMY",2.7,getRandomColor()),
     new Car(road.getLaneCenter(2),-500,30,50,"DUMMY",2.7,getRandomColor()),
-    new Car(road.getLaneCenter(0),-700,30,50,"DUMMY",1.5,getRandomColor()),
+    new Car(road.getLaneCenter(0),-900,30,50,"DUMMY",1.5,getRandomColor()),
     new Car(road.getLaneCenter(2),-700,30,50,"DUMMY",2,getRandomColor()),
 ];
 
@@ -46,7 +46,7 @@ function generateCars(N){
     const cars=[];
     for(let i=1;i<=N;i++){
         if(i%2){
-            cars.push(new Car(road.getLaneCenter(2),500,30,50,"AI"));
+            cars.push(new Car(road.getLaneCenter(2),200,30,50,"AI"));
         }
         else{
         cars.push(new Car(road.getLaneCenter(0),500,30,50,"AI"));}
